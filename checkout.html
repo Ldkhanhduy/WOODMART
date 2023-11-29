@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thanh Linh">
+    <title>WoodMart</title>
+    <!-- ===== Style Css ===== -->
+    <link rel="stylesheet" type="text/css" href="./public/css/main.css">
+    <!-- ===== Font Awesome ===-->
+    <link rel="stylesheet" href="./public/css/fonts/fontawesome/css/all.min.css">
+    <!--Icon Font-->
+    <link rel="stylesheet" href="./public/css/fonts/icofont/icofont.min.css">
+</head>
+
+<body>
+
+    <!-- ===== Start Page Loader ===== -->
+    <!-- <div id="onTop"></div>
+    <div class="loader dflex">
+        <img src="./public/images/logo/wood-logo-dark.svg" alt="">
+        <div class="dflex"><span></span><span></span><span></span></div>
+    </div> -->
+    <!-- ===== End Page Loader ===== -->
+
+    <!-- Start up Header -->
+    <header></header>
+    <!-- End of Header -->
+
+    <!-- ===== Start Menu Moblie ===== -->
+    <menu></menu>
+    <!-- ===== End Menu Moblie ======= -->
+
+    <!-- ===== Start Banner ===== -->
+    <div class="bannerProduct cart">
+        <ul>
+            <li class="active"> <a href="cart.html">SHOPPING CART</a></li>
+            <li><i class="fa-solid fa-arrow-right-long"></i></li>
+            <li class="active"> <a href="checkout.html">CHECK OUT</a></li>
+            <li><i class="fa-solid fa-arrow-right-long"></i></li>
+            <li class="active"> <a href="#">ORDER COMPLETE</a></li>
+        </ul>
+    </div>
+    <!--End Banner-->
+    
+
+    <!-- ===== Start up Checkout ===== -->
+    <div class="checkout">
+        <div class="checkout__wrap container dflex">
+            <div class="checkout__item col-lg-6 col-12">
+                <div class="checkout_register">
+                    <div class="info">
+                        <strong>Returning customer?</strong>
+                        <a href="#">Click here to login</a> 
+                    </div>
+                    <br>
+                    <div class="info">
+                        <strong>Have a coupon?</strong>
+                        <a href="#"> Click here to enter your code</a>
+                    </div>
+                    <br>
+                    <img src="./public/images/singleProduct/free shipping.jpg" alt="" style="height: 100%;width: 99.99%;padding-left: 0%;padding-right: 0%;">
+                </div>
+                
+                <br>
+                <h3>Billing Details</h3>
+                <form action="#" class="checkout__form">
+                    <!-- Start Personal information 1 -->
+                    <div class="dflex" style="flex-wrap: wrap;">
+                        <div class="input input__firstName col-lg-6 col-12">
+                            <label for="first">First name</label>
+                            <input type="text" id="first">
+                          </div>
+                        <div class="input input__lastName col-lg-6 col-12">
+                            <label for="name">Last name</label>
+                            <input type="text" id="name">
+                        </div>
+                    </div>
+                    <div class="input input__company col-12">
+                        <label for="company">Company name (optional)</label>
+                        <input type="text" id="company">
+                    </div>
+                    <div class="input input__country col-12">
+                        <label for="country">Country / Region</label>
+                        <select id="country">
+                            <option value="select">---Select a Country---</option>
+                            <option value="VN">VietNam</option>
+                            <option value="UK">English</option>
+                            <option value="US">United States</option>
+                            <option value="CN">China</option>
+                            <option value="FRA">France</option>
+                            <option value="DEU">Germany</option>
+                            <option value="ITA">Italy</option>
+                            <option value="JPN">Japan</option>
+                            <option value="MEX">Mexico</option>
+                            <option value="PAK">Pakistan</option>
+                            <option value="PHL">Philippines</option>
+                            <option value="POL">Poland</option>
+                            <option value="PRT">Portugal</option>
+                            <option value="QTA">Qatar</option>
+                            <option value="ROU">Romania</option>
+                            <option value="RUS">Russia</option>
+                            <option value="ESP">Spain</option>
+                            <option value="THA">Thailand</option>
+                            <option value="SGP">Singapore</option>
+                        </select>
+                    </div>
+                    <div class="input input__street col-12">
+                        <label for="street">Street address</label>
+                        <input type="text" id="street" placeholder="House number and street name">
+                        <input type="text" id="street" placeholder="Apartment, suite, unit, etc. (optional)">
+                    </div>
+                    <div class="input input__city col-12">
+                        <label for="city">Town / City</label>
+                        <input type="text" id="city">
+                    </div>
+                    <div class="input input__state col-12">
+                        <label for="state">State</label>
+                        <select id="state">
+                            <option value="select">---Select a State---</option>
+                            <option value="alabama">Alabama</option>
+                            <option value="alaska">Alaska</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arkansas">Arkansas</option>
+                            <option value="california">California</option>
+                            <option value="colorado">Colorado</option>
+                            <option value="connecticut">Connecticut</option>
+                            <option value="delaware">Delaware</option>
+                            <option value="district">District of Columbia</option>
+                            <option value="florida">Florida</option>
+                            <option value="georgia">Georgia</option>
+                            <option value="hawaii">Hawaii</option>
+                            <option value="idaho">Idaho</option>
+                            <option value="illinois">Illinois</option>
+                            <option value="indiana">Indiana</option>
+                            <option value="iowa">Iowa</option>
+                            <option value="kansas">Kansas</option>
+                            <option value="kentucky">Kentucky</option>
+                            <option value="louisiana">Louisiana</option>
+                            <option value="maine">Maine</option>
+                            <option value="maryland">Maryland</option>
+                            <option value="massachusetts">Massachusetts</option>
+                            <option value="michigan">Michigan</option>
+                            <option value="minnesota">Minnesota</option>
+                            <option value="mississippi">Mississippi</option>
+                            <option value="missouri">Missouri</option>
+                            <option value="montana">Montana</option>
+                            <option value="nebraska">Nebraska</option>
+                            <option value="nevada">Nevada</option>
+                            <option value="new hampshire">New Hampshire</option>
+                            <option value="new jersey">New Jersey</option>
+                            <option value="new mexico">New Mexico</option>
+                            <option value="new york">New York</option>
+                            <option value="north carolina">North Carolina</option>
+                            <option value="north dakota">North Dakota</option>
+                            <option value="ohio">Ohio</option>
+                            <option value="oklahoma">Oklahoma</option>
+                            <option value="oregon">Oregon</option>
+                            <option value="pennsylvania">Pennsylvania</option>
+                            <option value="rhode island">Rhode Island</option>
+                            <option value="south carolina">South Carolina</option>
+                            <option value="south dakota">South Dakota</option>
+                            <option value="tennessee">Tennessee</option>
+                            <option value="texas">Texas</option>
+                            <option value="utah">Utah</option>
+                            <option value="vermont">Vermont</option>
+                            <option value="virginia">Virginia</option>
+                            <option value="washington">Washington</option>
+                            <option value="west virginia">West Virginia</option>
+                            <option value="wisconsin">Wisconsin</option>
+                            <option value="wyoming">Wyoming</option>
+                            <option value="AA">Armed Forces (AA)</option>
+                            <option value="AE">Armed Forces (AE)</option>
+                            <option value="AP">Armed Forces (AP)</option>
+                        </select>
+                    </div>
+                    <div class="input input__zip col-12">
+                        <label for="zip">Portcode / ZIP (optional)</label>
+                        <input type="text" id="zip">
+                    </div>
+                    <div class="input input__phone col-12">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone">
+                    </div>   
+                    <div class="input input__email col-12">
+                        <label for="email">Email address</label>
+                        <input type="text" id="email">
+                    </div>
+                    <!-- End Personal information 1 -->  
+                    <div class="input input__checkbox col-12">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Create an account?</label>
+                    </div><br>
+                    <br>
+                    <div class="input input__checkbox col-12">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Ship to a different address?</label>
+                    </div><br>
+                    
+                    <!-- Start Personal information 2 -->
+                    <div class="dflex" style="flex-wrap: wrap;">
+                        <div class="input input__firstName col-lg-6 col-12">
+                            <label for="first">First name</label>
+                            <input type="text" id="first">
+                        </div>
+                        <div class="input input__lastName col-lg-6 col-12">
+                            <label for="name">Last name</label>
+                            <input type="text" id="name">
+                        </div>
+                    </div>
+                    <div class="input input__company col-12">
+                        <label for="company">Company name (optional)</label>
+                        <input type="text" id="company">
+                    </div>
+                    <div class="input input__country col-12">
+                        <label for="country">Country / Region</label>
+                        <select id="country">
+                            <option value="select">---Select a Country---</option>
+                            <option value="VN">VietNam</option>
+                            <option value="UK">English</option>
+                            <option value="US">United States</option>
+                            <option value="CN">China</option>
+                            <option value="FRA">France</option>
+                            <option value="DEU">Germany</option>
+                            <option value="ITA">Italy</option>
+                            <option value="JPN">Japan</option>
+                            <option value="MEX">Mexico</option>
+                            <option value="PAK">Pakistan</option>
+                            <option value="PHL">Philippines</option>
+                            <option value="POL">Poland</option>
+                            <option value="PRT">Portugal</option>
+                            <option value="QTA">Qatar</option>
+                            <option value="ROU">Romania</option>
+                            <option value="RUS">Russia</option>
+                            <option value="ESP">Spain</option>
+                            <option value="THA">Thailand</option>
+                            <option value="SGP">Singapore</option>
+                        </select>
+                    </div>
+                    <div class="input input__street col-12">
+                        <label for="street">Street address</label>
+                        <input type="text" id="street" placeholder="House number and street name">
+                    </div>
+                    <div class="input input__state col-12">
+                        <label for="state">State</label>
+                        <select id="state">
+                            <option value="select">---Select a State---</option>
+                            <option value="alabama">Alabama</option>
+                            <option value="alaska">Alaska</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arkansas">Arkansas</option>
+                            <option value="california">California</option>
+                            <option value="colorado">Colorado</option>
+                            <option value="connecticut">Connecticut</option>
+                            <option value="delaware">Delaware</option>
+                            <option value="district">District of Columbia</option>
+                            <option value="florida">Florida</option>
+                            <option value="georgia">Georgia</option>
+                            <option value="hawaii">Hawaii</option>
+                            <option value="idaho">Idaho</option>
+                            <option value="illinois">Illinois</option>
+                            <option value="indiana">Indiana</option>
+                            <option value="iowa">Iowa</option>
+                            <option value="kansas">Kansas</option>
+                            <option value="kentucky">Kentucky</option>
+                            <option value="louisiana">Louisiana</option>
+                            <option value="maine">Maine</option>
+                            <option value="maryland">Maryland</option>
+                            <option value="massachusetts">Massachusetts</option>
+                            <option value="michigan">Michigan</option>
+                            <option value="minnesota">Minnesota</option>
+                            <option value="mississippi">Mississippi</option>
+                            <option value="missouri">Missouri</option>
+                            <option value="montana">Montana</option>
+                            <option value="nebraska">Nebraska</option>
+                            <option value="nevada">Nevada</option>
+                            <option value="new hampshire">New Hampshire</option>
+                            <option value="new jersey">New Jersey</option>
+                            <option value="new mexico">New Mexico</option>
+                            <option value="new york">New York</option>
+                            <option value="north carolina">North Carolina</option>
+                            <option value="north dakota">North Dakota</option>
+                            <option value="ohio">Ohio</option>
+                            <option value="oklahoma">Oklahoma</option>
+                            <option value="oregon">Oregon</option>
+                            <option value="pennsylvania">Pennsylvania</option>
+                            <option value="rhode island">Rhode Island</option>
+                            <option value="south carolina">South Carolina</option>
+                            <option value="south dakota">South Dakota</option>
+                            <option value="tennessee">Tennessee</option>
+                            <option value="texas">Texas</option>
+                            <option value="utah">Utah</option>
+                            <option value="vermont">Vermont</option>
+                            <option value="virginia">Virginia</option>
+                            <option value="washington">Washington</option>
+                            <option value="west virginia">West Virginia</option>
+                            <option value="wisconsin">Wisconsin</option>
+                            <option value="wyoming">Wyoming</option>
+                            <option value="AA">Armed Forces (AA)</option>
+                            <option value="AE">Armed Forces (AE)</option>
+                            <option value="AP">Armed Forces (AP)</option>
+                        </select>
+                    </div>
+                    <div class="input input__city col-12">
+                        <label for="city">Town / City</label>
+                        <input type="text" id="city">
+                    </div>
+                    <div class="input input__zip col-12">
+                        <label for="zip">Portcode / ZIP (optional)</label>
+                        <input type="text" id="zip">
+                    </div>
+                    <div class="input input__message col-12">
+                        <label for="message">Order notes (optional)</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                    <!-- End Personal information 2 -->                               
+                </form>
+            </div>
+            <div class="checkout__item col-lg-6 right col-12">
+                <h3>Your Order</h3>
+                <form action="#">
+                    <ul>
+                        <li class="dflex">
+                            <div class="heading">PRODUCT</div>
+                            <div class="heading">TOTAL</div>
+                        </li>
+                        <li class="dflex">
+                            <img style="height: 15%;width: 15%; margin-left: 10px;" src="./public/images/tabProduct/section1/watch-brown.jpg" alt="watch-brown"/>
+                            <div class="wd-checkout-prod-title" style="display: flex;
+                            flex-wrap: wrap; margin-inline-end: 10px; margin: 0; border: 0; vertical-align: baseline; font: inherit; font-size: 100%; padding-left: 2%;">
+                                <h4 style="font-size: medium; color: #777777; font-weight: 400;font-size: 14px; font-family: Lato, Arial, Helvetica, sans-serif;">Smart watches wood edition - Beige</h4>
+                                <div class="quantity" style="margin-top: 10px; width: 100%;max-width: 100% !important; display: flex; box-sizing: border-box; text-align: start; border-spacing: 0; border-collapse: collapse">
+                                    <input type="button" value="-" class="minus" fdprocessedid="n027x" style="height: 32px; width: 10%; padding: 0 5px; min-width: 25px; min-height: unset; border: 2px solid rgba(0, 0, 0, 0.1); background: transparent; box-shadow: none; display: inline-block; color: #777777; cursor: pointer; appearance: button; text-align: center">
+                                    <label class="screen-reader-text" for="quantity_6553648e52139"></label>
+                                    <input type="number" id="quantity_6553648e52139" class="input-text qty text" value="1" aria-label="Product quantity" min="0" max="" name="cart[6fed4dcc73d8d62224b1f88f77c48d5d][qty]" step="1" placeholder="" inputmode="numeric" autocomplete="off" fdprocessedid="515k1i" style="height: 32px; width: 16%; padding: 0 5px; max-width: 100%; min-height: unset; border: 2px solid rgba(0, 0, 0, 0.1); background: transparent; box-shadow: none; display: inline-block; color: #777777; cursor: pointer; appearance: button; text-align: center; vertical-align: middle; font-style: unset; font-family: inherit; text-shadow: none; text-transform: uppercase">
+                                    <input type="button" value="+" class="plus" fdprocessedid="dvtbnk" style="height: 32px; width: 10%; padding: 0 5px; min-width: 25px; min-height: unset; border: 2px solid rgba(0, 0, 0, 0.1); background: transparent; box-shadow: none; display: inline-block; color: #777777; cursor: pointer; appearance: button; text-align: center">
+                                </div>
+                            </div>
+                            <div class="price">$599.00</div>
+                        </li>
+                        <li class="dflex">
+                            <div class="heading">Subtotal</div>
+                            <div class="price green">$599.00</div>
+                        </li>
+                        <li class="dflex">
+                            <div class="heading">Shipping</div>
+                            <div class="checkbox">
+                                <p style="display: flex; justify-content: right;">
+                                    Flat rate: <span class="price green">$20.00</span>
+                                    <input type="radio" name="price" value="20.00" id="flat-rate">
+                                    <label for="flat-rate"></label>
+                                </p>                         
+                                <p style="display: flex; justify-content: right;">
+                                    Free shipping
+                                    <input type="radio" id="free-shipping" name="shipping-option" value="free">
+                                    <label for="free-shipping"></label>
+                                </p>
+                                <p style="display: flex; justify-content: right;">
+                                    Local pickup: <span class="price green">$25.00</span>
+                                    <input type="radio" id="local-pickup" name="shipping-option" value="25.00">
+                                    <label for="local-pickup"></label>
+                                </p>                                
+                            </div>
+                        </li>
+                        <li class="dflex">
+                            <div class="heading">Total</div>
+                            <div class="price green">$619.00</div>
+                        </li>
+                    </ul>
+                    <div class="payments">
+                        <div class="payments__item">
+                            <input type="radio" name="payment" id="payment1" checked="checked">
+                            <label for="payment1">Direct bank transfer</label>
+                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won't be shipped until the funds have cleared in our account.</p>
+                        </div>
+                        <div class="payments__item">
+                            <input type="radio" name="payment" id="payment2">
+                            <label for="payment2">Cheque Payment</label>
+                            <p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                        </div>
+                        <div class="payments__item">
+                            <input type="radio" name="payment" id="payment3">
+                            <label for="payment3">Cash on Delivery</label>
+                            <p>Pay with cash upon delivery.</p>
+                        </div>
+                        <div class="payments__item">
+                            <input type="radio" name="payment" id="payment4">
+                            <label for="payment4">PayPal<img src="./public/images/footer/AM_mc_vs_dc_ae.jpg" alt="PayPal Logo"><a href="#">What is PayPal?</a></label>
+                            <p>Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our  <strong><a href="#">privacy policy</a></strong></p>
+                    <hr>
+                    <div class="input input__checkbox">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                           I have read and agree to the website<strong><a> terms and conditions *</a></strong></label>
+                        <button type="submit">PLACE ODER</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ===== End of Checkout ===== -->
+    
+    <!-- ===== Start Clients ======= -->
+    <div class="clients">
+        <div class="clients__wrap dflex" id="wrap">
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/home/clients/brand-witra.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/home/clients/brand-Rosenthal.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/home/clients/brand-PackIt.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/home/clients/nichemodern.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/home/clients/brand-Magisso.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/home/clients/brand-Louis-Poulsen.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/home/clients/klobe2r.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/home/clients/brand-Joseph-Joseph.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/home/clients/brand-hay.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/home/clients/brand-flos.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/home/clients/brand-Eva-Solo.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/home/clients/brand-alessi.png" alt=""></div>
+        </div>
+    </div>
+    <!-- ====== End Clients ====== -->
+
+    <!-- ====== Isotope ========== -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- ====== JavaScript ======= -->
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
