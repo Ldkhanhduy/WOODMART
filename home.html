@@ -7,16 +7,117 @@
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <link rel="stylesheet" href="./public/css/style.css"/>
     <link rel="stylesheet" href="./public/js/main.js"/>
+    <link rel="stylesheet" href="../doan/public/image/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
     <!-- Header here -->
+    <header class="header">
+        <div class="top_bar1">
+            <div class="wood1">
+                <select class="iTem language">
+                    <option value="sl" class="sl">ENGLISH</option>
+                    <option value="sl">Deutsch</option>
+                    <option value="sl">French</option>
+                    <option value="sl">Requires WPML plugin</option>
+                </select>
+                <select class="iTem country">
+                    <option value="" disabled selected>COUNTRY</option>
+                    <option value="item">United States(USD)</option>
+                    <option value="item">Deutschland(EUR)</option>
+                    <option value="item">Japan(JPY)</option>
+                </select>
+                <div class="item free">FREE SHIPPING FOR ALL ORDERS OF <span>$</span>150</div>
+            </div>
+            <div class="empty"></div>
+            <div class="wood2">
+                <div class="item social">
+                    <i class="fa-brands fa-facebook-f icon"></i>
+                    <i class="fa-brands fa-twitter icon"></i>
+                    <i class="fa-brands fa-instagram icon"></i>
+                    <i class="fa-brands fa-youtube icon"></i>
+                    <i class="fa-brands fa-pinterest icon"></i>
+                </div>
+                <div class="item newsletter">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>NEWSLETTER</span>
+                </div>
+                <div class="item contact_us">CONTACT US</div>
+                <div class="item faqs">FAQS</div>
+            </div>
+        </div>
+        <div class="top_bar2">
+            <div class="top_bar2_container">
+                <div class="topbar2">
+                    <div class="site-logo">
+                        <img class="logo"
+                        src="./public/image/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/wood-logo-dark.svg">
+                    </div>
+                    <div class="search_container">
+                        <div class="search-bar">
+                            <input type="text" class="search-input" placeholder="Search for products">
+                            <select class="category-select">
+                                <option value="" disabled selected>Select category</option>
+                                <option value="category1">Clocks</option>
+                                <option value="category2">Lighting</option>
+                                <option value="category2">Furniture</option>
+                                <option value="category2">Accessories</option>
+                                <option value="category2">Cooking</option>
+                                <option value="category2">Toys</option>
+                                <option value="category2">Other</option>
+                            </select>
+                            <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <div class="list2">
+                        <div class="login">LOGIN/REGISTER</div>
+                        <div class="fa-regular fa-heart"></div>
+                        <div class="fa-solid fa-shuffle"></div>
+                        <div class="shopping_cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="money">
+                                <span class="dollar">$</span>
+                                0.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top_bar3">
+            <div class="top_bar3_container">
+                <div class="browser">
+                    <span class="menu_open_icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                    <span class="menu_open_label">BROWSER CATEGORIES</span>
+                    <span class="menu_more_icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </div>
+                <div class="list">
+                    <div class="menu">
+                        <div class="element">HOME</div>
+                        <div class="element">SHOP</div>
+                        <div class="element">BLOG</div>
+                        <div class="element">PAGES</div>
+                        <div class="element">ELEMENTS</div>
+                        <div class="element">BUY</div>
+                    </div>
+                </div>
+                <div class="offer">
+                    <div class="special_offer">SPECIAL OFFER</div>
+                    <div class="purchase_theme">PURCHASE THEME</div>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- section dau tien -->
     <div class="wrapper">
         <div style="background-color: #f8f8f8;display: flex;width: 100%; justify-content: center;">
-            <section class="container__main row">
-                <div class="container__1 col-md-3 col-sm-0">
+            <section class="container__main">
+                <div class="container__1">
                     <ul class="ul_list">
                         <li class="container__list">
                             <img class="image" src="./public/images/chair-1.svg"/>
@@ -52,7 +153,7 @@
                         </li>
                         <li class="container__list">
                             <img src="./public/images/002-hand-bag.svg" class="image">
-                            <spanstyle="color:#333333">Minimalism</span>
+                            <span style="color:#333333">Minimalism</span>
                         </li>
                         <li class="container__list">
                             <img src="./public/images/004-game-console.svg" class="image">
@@ -64,10 +165,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="container__2 col-md-7 col-sm-10">
+                <div class="container__2">
                     <h1 class="fontt">Eames - </h1>
                     <h1 class="fontt">Side Chair.</h1>
-                    <p class="font2">COLOR:</p>
+                    <div style="display: flex; flex-direction: row;">
+                        <p class="font2">COLOR:</p>
+                        <img style="margin-left: 10px; height: 30px;margin-top: auto;margin-bottom: auto;" src="./public/images/color_bar.png" alt="color_bar">
+                    </div>
                     <p class="font3">Semper vulputate aliquam curae condimentum<br>quisque gravida fusce convallis arcu cum at.</p>
                     <h2 class="font4">Only $99.00</h2>
                 </div>
@@ -89,34 +193,39 @@
             </div>
             <div class="collect__2 row">
                 <div class="collect__2__1 col-md-6">
-                    <div class="collect-image-left" style="background-image: url(./public/images/cat-23-860x860.jpg); background-size: cover;">
+                    <div class="collect-image-left">
+                        <div class="picture" style="height: 100%;width: 100%;background-image: url(./public/images/cat-23-860x860.jpg); background-size: cover;"></div>
                         <div class="hover_items">
                             <div class="furniture">FURNITURE</div>
                             <div class="more">18 products</div>
                         </div>
                     </div>
                 </div>
-                <div class="collect__2__1 col-md-6 row">
-                    <div class="collect-image-right col-md-5 col-sm-5" style="background-image: url(./public/images/cat-klock-430x430.jpg); background-size: cover; margin-bottom: 2%;">
+                <div class="collect__2__1 col-md-6 row" style="margin-left: 1px !important;">
+                    <div class="collect-image-right col-md-5 col-sm-5">
+                        <div class="picture" style="height: 100%;width: 100%;background-image: url(./public/images/cat-klock-430x430.jpg); background-size:cover;"></div>
                         <div class="hover_items">
                             <div class="furniture">CLOCKS</div>
                             <div class="more">18 products</div>
                         </div>
                     </div>
-                    <div class="collect-image-right col-md-5 col-sm-5" style="background-image: url(./public/images/cat-clock-3-430x430.jpg); background-size: cover; margin-bottom: 2%">
+                    <div class="collect-image-right col-md-5 col-sm-5">
+                        <div class="picture" style="height: 100%;width: 100%;background-image: url(./public/images/cat-clock-3-430x430.jpg); background-size: cover;"></div>
                         <div class="hover_items">
                             <div class="furniture">ACCESSORIES</div>
                             <div class="more">18 products</div>
                         </div>
                     </div>
-                    <div class="collect-image-right col-md-5 col-sm-5" style="background-image: url(./public/images/light-cat-5-430x430.jpg); background-size: cover;">
-                        <div class="hover_items">
+                    <div class="collect-image-right col-md-5 col-sm-5">
+                        <div class="picture" style="height: 100%;width: 100%;background-image: url(./public/images/light-cat-5-430x430.jpg); background-size: cover;"></div>
+                        <div class="hover_items" style="margin-bottom: 12px;">
                             <div class="furniture">LIGHTING</div>
                             <div class="more">18 products</div>
                         </div>
                     </div>
-                    <div class="collect-image-right col-md-5 col-sm-5" style="background-image: url(./public/images/Toys-cat-1-430x430.jpg); background-size: cover;">
-                        <div class="hover_items">
+                    <div class="collect-image-right col-md-5 col-sm-5">
+                        <div class="picture" style="height: 100%;width: 100%;background-image: url(./public/images/Toys-cat-1-430x430.jpg); background-size: cover;"></div>
+                        <div class="hover_items" style="margin-bottom: 12px;">
                             <div class="furniture">TOYS</div>
                             <div class="more">18 products</div>
                         </div>
@@ -124,6 +233,7 @@
                 </div>
             </div>
         </section>
+        <!-- end collections -->
         <!-- start feature product -->
         <section class="collect">
             <div class="collect__main">
@@ -139,78 +249,456 @@
             </div>
             <div>
                 <ul class="list_feature">
-                    <li class="list_feature_style">BEST SELLERS</li>
+                    <li class="list_feature_style" style="color: #333;text-decoration: underline greenyellow 2px;">BEST SELLERS</li>
                     <li class="list_feature_style">FEATURED</li>
                     <li class="list_feature_style">SALES</li>
                 </ul>
             </div>
-            <div class="feature">
-                <div class="feature__product">
-                    <img class="feature_pro_img" src="./public/images/wooden-design-drawer.jpg" alt="a">
+            <div class="feature row">
+                <div class="feature__product col-md-6 col-lg-3">
+                    <div style="overflow: hidden;">
+                        <img class="feature_pro_img" src="./public/images/wooden-design-drawer.jpg" alt="a">
+                    </div>
+                    <div class="firstfeature">
+                        <div style="padding-right: 20px;">
+                            <img style="height: 20px; width: 20px;" src="./public/images/random.png" alt="random">
+                        </div>
+                    </div>
                     <div class="feature_box_detail">
                         <h3 class="feature_product_title">Wooden single drawer</h3>
                         <div class="feature_product_tag">Furniture</div>
                         <span class="feature_price">$249</span>
+                        <div class="hidden_feature">
+                            <div style="width: 90%; align-self: center;">
+                                <p>Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur.</p>
+                            </div>
+                            <div class="bottomfeature">
+                                <img class="heart" src="./public/images/heart.png" alt="heart">
+                                <div class="addproduct">ADD TO CART</div>
+                                <img src="./public/images/search.jpg" alt="search" class="search">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="feature__product">
-                    <img class="feature_pro_img" src="./public/images/smart-watch-wooden-edition.jpg" alt="a">
-                    <div class="feature_box_detail">    
+                <div class="feature__product col-md-6 col-lg-3">
+                    <div style="overflow: hidden;">
+                        <img class="feature_pro_img" src="./public/images/smart-watch-wooden-edition.jpg" alt="a">
+                    </div>
+                    <div class="firstfeature">
+                        <div style="padding-right: 20px;">
+                            <img style="height: 20px; width: 20px;" src="./public/images/random.png" alt="random">
+                        </div>
+                    </div>   
+                    <div class="feature_box_detail"> 
                         <h3 class="feature_product_title">Smart watches wood edition</h3>
                         <div class="feature_product_tag">Accessories, Clocks</div>
                         <span class="feature_price">$249</span>
+                        <div class="hidden_feature">
+                            <div style="width: 90%;align-self: center">
+                                <p>Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur.</p>
+                            </div>
+                            <div class="bottomfeature">
+                                <img class="heart" src="./public/images/heart.png" alt="heart">
+                                <div class="addproduct">ADD TO CART</div>
+                                <img src="./public/images/search.jpg" alt="search" class="search">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="feature__product">
-                    <img class="feature_pro_img" src="./public/images/paton-tunier-chair.jpg" alt="a">
+                <div class="feature__product col-md-6 col-lg-3">
+                    <div style="overflow: hidden;">
+                        <img class="feature_pro_img" src="./public/images/paton-tunier-chair.jpg" alt="a">
+                    </div>
+                    <div class="firstfeature">
+                        <div style="padding-right: 20px;">
+                            <img style="height: 20px; width: 20px;" src="./public/images/random.png" alt="random">
+                        </div>
+                    </div> 
                     <div class="feature_box_detail">    
                         <h3 class="feature_product_title">Panton tunior chair</h3>
                         <div class="feature_product_tag">Furniture</div>
                         <span class="feature_price">$249</span>
+                        <div class="hidden_feature">
+                            <div style="width: 90%;align-self: center">
+                                <p>Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur.</p>
+                            </div>
+                            <div class="bottomfeature">
+                                <img class="heart" src="./public/images/heart.png" alt="heart">
+                                <div class="addproduct">ADD TO CART</div>
+                                <img src="./public/images/search.jpg" alt="search" class="search">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="feature__product">
-                    <img class="feature_pro_img" src="./public/images/decoration-wooden.jpg" alt="a">
+                <div class="feature__product col-md-6 col-lg-3">
+                    <div style="overflow: hidden;">
+                        <img class="feature_pro_img" src="./public/images/decoration-wooden.jpg" alt="a">
+                    </div>
+                    <div class="firstfeature">
+                        <div style="padding-right: 20px;">
+                            <img style="height: 20px; width: 20px;" src="./public/images/random.png" alt="random">
+                        </div>
+                    </div> 
                     <div class="feature_box_detail">    
                         <h3 class="feature_product_title">Decoration wooden present</h3>
                         <div class="feature_product_tag">Accessories</div>
                         <span class="feature_price">$249</span>
+                        <div class="hidden_feature">
+                            <div style="width: 90%;align-self: center">
+                                <p>Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur.</p>
+                            </div>
+                            <div class="bottomfeature">
+                                <img class="heart" src="./public/images/heart.png" alt="heart">
+                                <div class="addproduct">ADD TO CART</div>
+                                <img src="./public/images/search.jpg" alt="search" class="search">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="feature__product">
-                    <img class="feature_pro_img" src="./public/images/wine-bottle-lentern.jpg" alt="a">
+                <div class="feature__product col-md-6 col-lg-3">
+                    <div style="overflow: hidden;">
+                        <img class="feature_pro_img" src="./public/images/wine-bottle-lentern.jpg" alt="a">
+                    </div>
+                    <div class="firstfeature">
+                        <div style="padding-right: 20px;">
+                            <img style="height: 20px; width: 20px;" src="./public/images/random.png" alt="random">
+                        </div>
+                    </div> 
                     <div class="feature_box_detail">    
                         <h3 class="feature_product_title">Wine bottle lantern</h3>
                         <div class="feature_product_tag">Accessories</div>
                         <span class="feature_price">$249</span>
+                        <div class="hidden_feature">
+                            <div style="width: 90%;align-self: center">
+                                <p>Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur.</p>
+                            </div>
+                            <div class="bottomfeature">
+                                <img class="heart" src="./public/images/heart.png" alt="heart">
+                                <div class="addproduct">ADD TO CART</div>
+                                <img src="./public/images/search.jpg" alt="search" class="search">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="feature__product">
-                    <img class="feature_pro_img" src="./public/images/iphone-dock.jpg" alt="a">
+                <div class="feature__product col-md-6 col-lg-3">
+                    <div style="overflow: hidden;">
+                        <img class="feature_pro_img" src="./public/images/iphone-dock.jpg" alt="a">
+                    </div>
+                    <div class="firstfeature">
+                        <div style="padding-right: 20px;">
+                            <img style="height: 20px; width: 20px;" src="./public/images/random.png" alt="random">
+                        </div>
+                    </div> 
                     <div class="feature_box_detail">    
                         <h3 class="feature_product_title">iPhone Dock</h3>
                         <div class="feature_product_tag">Accessories</div>
                         <span class="feature_price">$249</span>
+                        <div class="hidden_feature">
+                            <div style="width: 90%;align-self: center">
+                                <p>Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur.</p>
+                            </div>
+                            <div class="bottomfeature">
+                                <img class="heart" src="./public/images/heart.png" alt="heart">
+                                <div class="addproduct">ADD TO CART</div>
+                                <img src="./public/images/search.jpg" alt="search" class="search">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="feature__product">
-                    <img class="feature_pro_img" src="./public/images/decoration-table-pen.jpg" alt="a">
+                <div class="feature__product col-md-6 col-lg-3">
+                    <div style="overflow: hidden;">
+                        <img class="feature_pro_img" src="./public/images/decoration-table-pen.jpg" alt="a">
+                    </div>
+                    <div class="firstfeature">
+                        <div style="padding-right: 20px;">
+                            <img style="height: 30px; width: 30px;" src="./public/images/random.png" alt="random">
+                        </div>
+                    </div> 
                     <div class="feature_box_detail">    
                         <h3 class="feature_product_title">Decoration for table pen</h3>
                         <div class="feature_product_tag">Accessories</div>
                         <span class="feature_price">$249</span>
+                        <div class="hidden_feature">
+                            <div style="width: 90%;align-self: center">
+                                <p>Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur.</p>
+                            </div>
+                            <div class="bottomfeature">
+                                <img class="heart" src="./public/images/heart.png" alt="heart">
+                                <div class="addproduct">ADD TO CART</div>
+                                <img src="./public/images/search.jpg" alt="search" class="search">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="feature__product">
-                    <img class="feature_pro_img" src="./public/images/eames-louge-chair.jpg" alt="a">
+                <div class="feature__product col-md-6 col-lg-3">
+                    <div style="overflow: hidden;">
+                        <img class="feature_pro_img" src="./public/images/eames-louge-chair.jpg" alt="a">
+                    </div>
+                    <div class="firstfeature">
+                        <div style="padding-right: 20px;">
+                            <img style="height: 30px; width: 30px;" src="./public/images/random.png" alt="random">
+                        </div>
+                    </div> 
                     <div class="feature_box_detail">    
                         <h3 class="feature_product_title">Eames lounge chair</h3>
                         <div class="feature_product_tag">Furniture</div>
                         <span class="feature_price">$249</span>
+                        <div class="hidden_feature">
+                            <div style="width: 90%;align-self: center">
+                                <p>Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur.</p>
+                            </div>
+                            <div class="bottomfeature">
+                                <img class="heart" src="./public/images/heart.png" alt="heart">
+                                <div class="addproduct">ADD TO CART</div>
+                                <img src="./public/images/search.jpg" alt="search" class="search">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>    
+        <!-- start slide -->
+        <section class="slide">
+            <div class="bestsell">BestSellers</div>
+            <img class="arrow" src="./public/images/previous-page.png" alt="pre">
+            <div class="slide__slide row">
+                <div class="slide__image col-md-6">
+                    <img src="./public/images/slide-3-on-green-sized-opt.png" alt="slide 1">
+                </div>
+                <div class="col-md-6">
+                    <div class="slide__info">
+                        <div class="info_title">PRODUCT LANDING PAGE</div>
+                        <h4 class="info_name">Woodspot -<br> Modern Pattern.</h4>
+                        <div class="info_detail">
+                            <div class="detail_1">
+                                <h4 class="detail_1_1">DESIGNER:</h4>
+                                <div class="detail_1_2">Ghislain Magrite</div>
+                            </div>
+                            <div class="detail_1">
+                                <div class="detail_1_1">MATERIALS:</div>
+                                <div class="detail_1_2">Wood, Ceramic, Metal</div>
+                            </div>
+                            <div class="detail_1">
+                                <div class="detail_1_1">CLIENTS:</div>
+                                <div class="detail_1_2">Woodmart, Basel</div>
+                            </div>
+                        </div>
+                        <div class="info_price">
+                            <span class="price">$299.00</span>
+                            <button class="btnn">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="arrow" src="./public/images/move-to-the-next-page-symbol.svg" alt="arrow">
+        </section>
+        <!-- end slide -->
+        <!-- start contact -->
+        <section class="contact row" style="padding-left: 148px;padding-right: 148px;padding-top: 100px;padding-bottom: 100px;">
+            <div class="contact_info col-md-6">
+                <div class="contact_title">ALL-IN-ONE ECOMMERCE SOLUTION</div>
+                <div class="contact_name">WoodMart-WooCommerce Theme</div>
+                <p class="contact_text">WoodMart WooCommerce theme for WordPress is the only thing you need to create your perfect online store. Use it for any kind of website: business, corporate, retail, multivendors.</p>
+                <div class="buto">
+                    <button class="buto__1">READ MORE</button>
+                    <button class="buto__2">CONTACT US</button>
+                </div>
+            </div>
+        </section>
+        <!-- end contact -->
+        <!-- start join -->
+        <section class="join" style="position: relative;padding: 50px 150px;">
+            <div class="join_first">
+                <h4 class="join_title">
+                    <strong>JOIN OUR NEWSLETTER NOW</strong>
+                </h4>
+                <DIV class="join_form">
+                    <input style="width: 30%;font-family: 'Lato';color:#777777;font-size: 14px;font-weight: 400;" type="email" name="EMAIL" placeholder="Your email address" required="">
+                    <input class="buttnn" type="submit" value="Sign up">
+                </DIV>
+                <div class="join_privacy">
+                    <p style="margin: 0 0">Will be used in accordance with our </p>
+                    <a style="text-decoration: none;color: #333;" href="#">
+                        <strong style="padding-left: 2px;" style=>Privacy Policy</strong>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end join -->
+        <!-- start news -->
+        <section class="news">
+            <div class="news_1">FURNITURE GUIDES</div>
+            <div class="news_2">OUR LATEST NEWS</div>
+            <div class="news_3">Latest trends and inspiration in interior design.</div>
+            <div class="news_feed row">
+                <div class="feed_col col-lg-4">
+                    <div style="width: 100%;overflow: hidden; display: block;">
+                        <img class="blog" src="./public/images/blog-grid-1.jpg" alt="blog">
+                    </div>
+                    <div style="width: 100%;">
+                        <div class="news_main">
+                            <div class="tag">DESIGN TRENDS, FURNITURE</div>
+                            <h3 style="color: #333333;font-family: 'Poppins';margin-bottom: 10px;font-size: 24px;font-weight: 500;text-align: center;">Seating collection inspiration</h3>
+                            <ul class="list_author">
+                                <li style="align-items: center;">
+                                    <span class="author">Posted by</span>
+                                    <img class="author_pic" src="./public/images/avatar-home.jpg" alt="author">
+                                    <span class="author" style="margin-right: 10px;">S. Rogers</span>
+                                </li>
+                                <li>
+                                    <img style="height: 14px;width: 16px;" src="./public/images/comment-logo-icon-sign-symbol-design-free-vector.jpg" alt="c">
+                                </li>
+                            </ul>
+                            <div class="news_content">
+                                Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a apte...
+                            </div>
+                            <a href="#" class="read_more">CONTINUE READING</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed_col col-lg-4 d-none d-md-block">
+                    <div style="width: 100%;overflow: hidden; display: block;">
+                        <img class="blog" src="./public/images/blog-grid-2.jpg" alt="blog">
+                    </div>
+                    <div style="width: 100%;">
+                        <div class="news_main">
+                            <div class="tag">DESIGN TRENDS, FURNITURE</div>
+                            <h3 style="color: #333333;font-family: 'Poppins';margin-bottom: 10px;font-size: 24px;font-weight: 500;text-align: center;">Seating collection inspiration</h3>
+                            <ul class="list_author">
+                                <li style="align-items: center;">
+                                    <span class="author">Posted by</span>
+                                    <img class="author_pic" src="./public/images/avatar-home.jpg" alt="author">
+                                    <span class="author" style="margin-right: 10px;">S. Rogers</span>
+                                </li>
+                                <li>
+                                    <img style="height: 14px;width: 16px;" src="./public/images/comment-logo-icon-sign-symbol-design-free-vector.jpg" alt="c">
+                                </li>
+                            </ul>
+                            <div class="news_content">
+                                Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a apte...
+                            </div>
+                            <a href="#" class="read_more">CONTINUE READING</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed_col col-lg-4 d-none d-md-block">
+                    <div style="width: 100%;overflow: hidden; display: block;">
+                        <img class="blog" src="./public/images/blog-grid-3.jpg" alt="blog">
+                    </div>
+                    <div style="width: 100%;">
+                        <div class="news_main">
+                            <div class="tag">DESIGN TRENDS, FURNITURE</div>
+                            <h3 style="color: #333333;font-family: 'Poppins';margin-bottom: 10px;font-size: 24px;font-weight: 500;text-align: center;">Seating collection inspiration</h3>
+                            <ul class="list_author">
+                                <li style="align-items: center;">
+                                    <span class="author">Posted by</span>
+                                    <img class="author_pic" src="./public/images/avatar-home.jpg" alt="author">
+                                    <span class="author" style="margin-right: 10px;">S. Rogers</span>
+                                </li>
+                                <li>
+                                    <img style="height: 14px;width: 16px;" src="./public/images/comment-logo-icon-sign-symbol-design-free-vector.jpg" alt="c">
+                                </li>
+                            </ul>
+                            <div class="news_content">
+                                Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a apte...
+                            </div>
+                            <a href="#" class="read_more">CONTINUE READING</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end news -->
+    </div>
+    <footer class="footer">
+        <div class="footer-container-main">
+            <div class="footer-side-bar">
+                <div class="footer-column-1">
+                    <div class="footer-all">
+                        <div class="footer-menu"><b>FOOTER MENU</b></div>
+                        <div class="footer-list">
+                            <a class="list-items" href="#">Instagram profile</a>
+                            <a class="list-items" href="#">New Collection</a>
+                            <a class="list-items" href="#">Woman Dress</a>
+                            <a class="list-items" href="#">Contact Us</a>
+                            <a class="list-items" href="#">Lastest News</a>
+                            <a class="list-items" href="#">Purchase Theme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column-2">
+                    <div class="footer-all2">
+                        <div class="footer-menu"><b>RECENT POSTS</b></div>
+                        <div class="footer-list">
+                            <div class="room">
+                                <img class="room-pic" src="C:\Users\ACER\Downloads\blog-12.jpg">
+                                <div class="text-room">
+                                    <div class="text-des"><b>A companion for extra sleeping</b></div>
+                                    <div class="text-cmt">
+                                        <div class="text-date">July 23,2016</div>
+                                        <div class="cmt">1 Comment</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room">
+                                <img class="room-pic" src="C:\Users\ACER\Downloads\blog-11.jpg">
+                                <div class="text-room">
+                                    <div class="text-des"><b>Outdoor seating collection inspiration</b></div>
+                                    <div class="text-cmt">
+                                        <div class="text-date">July 23,2016</div>
+                                        <div class="cmt">1 Comment</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column-3">
+                    <div class="footer-all3">
+                        <div class="footer-menu"><b>OUR STORES</b></div>
+                        <div class="footer-list">
+                            <a class="list-items" href="#">New York</a>
+                            <a class="list-items" href="#">London SF</a>
+                            <a class="list-items" href="#">Edinburgh</a>
+                            <a class="list-items" href="#">Los Angeles</a>
+                            <a class="list-items" href="#">Chicago</a>
+                            <a class="list-items" href="#">Las Vegas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column-4">
+                    <div class="footer-all4">
+                        <div class="footer-menu"><b>USEFUL LINKS</b></div>
+                        <div class="footer-list">
+                            <a class="list-items" href="#">Privacy Policy</a>
+                            <a class="list-items" href="#">Returns</a>
+                            <a class="list-items" href="#">Terms&Condition</a>
+                            <a class="list-items" href="#">Contact Us</a>
+                            <a class="list-items" href="#">Lastest News</a>
+                            <a class="list-items" href="#">Our Sitemap</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column-5">
+                    <div class="footer-all5">
+                        <div class="footer-menu"></div>
+                        <div class="footer-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-end">
+            <div class="min-footer">
+                <div class="min-footer-text"><b>WOODMART</b> © 2023 CREATED BY <b><span
+                            style="color: red;">X</span>TEMOS STUDIO</b>. PREMIUM E-COMMERCE SOLUTIONS.
+                </div>
+                <div class="min-footer-logo">
+                    <img class="footer-end-logo" src="C:\Users\ACER\Downloads\payments.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="scrollToTop" aria-label="Scroll to top button"></a>    
 </body>
 </html>

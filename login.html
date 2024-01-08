@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link rel="stylesheet" href="./public/css/setting.css" />
+    <link rel="stylesheet" href="./public/js/main.js" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../doan/public/image/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css"
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login-form">
+            <div class="login-heading">
+                <span class="title">Sign in</span>
+                <div class="close-side-widget wd-action-btn wd-style-text wd-cross-icon">
+                    <a href="#" rel="nofollow"><i class="fa-solid fa-x"></i>Close</a></div>
+            </div>
+            <div class="login-content">
+                <p class="login-address">
+                    <label for="username">Username or email address&nbsp;<span class="required">*</span></label>
+                    <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" value="">
+                </p>
+                <p class="login-password">
+                    <label for="password">Password&nbsp;<span class="required">*</span></label>
+                    <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" value="">
+                    <span class="toggle-password" onclick="togglePasswordVisibility()"><i class="fa-regular fa-eye"></i></span>
+                </p>
+                <p class="form-row">
+                    <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="187717bfdd">
+                    <input type="hidden" name="_wp_http_referer" value="/home/">
+                    <input type="hidden" name="redirect" value="https://woodmart.xtemos.com/home/">
+                    <button type="submit" class="button woocommerce-button woocommerce-form-login__submit" name="login" value="Log in">Log in</button>
+                </p>
+                <p class="login-form-footer">
+                    <div class="remember-me"><span>Remember me</span></div>
+                    <div class="lost-your-password">Lost your password?</div>
+                </p>
+                <p class="title wd-login-divider"><span>Or login with</span></p>
+                <div class="wd-social-login">
+                    <a href="https://woodmart.xtemos.com/my-account/?social_auth=facebook" class="login-fb-link btn">Facebook</a>
+                    <a href="https://woodmart.xtemos.com/my-account/?social_auth=google" class="login-goo-link btn">Google</a>
+                </div>
+            </div>
+            <div class="login-register">
+                <p>No account yet?</p>
+                <a href="https://woodmart.xtemos.com/my-account/?action=register" class="create-account">CREATE AN ACCOUNT</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
